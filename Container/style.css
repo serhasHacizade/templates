@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 85%;
+    min-width: 270px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    align-items: center;
+    background: url("components/background.png") no-repeat;
+    background-size: contain;
+
+}
+
+.info > * {
+    margin: 25px;
+}
+
+.info {
+    width: 68%;
+    height: 400px;
+    margin-left: 2.5rem;
+}
+
+p {
+    width: 55%;
+    line-height: 1.4rem;
+    font-size: .7rem;
+}
+
+i {
+    font-size: 100px; 
+    margin: 15px;
+}
+button {
+    padding: 8px 25px;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.graphics {
+    position: absolute;
+    right: 140px;
+    width: 35%;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.graphic {
+    width: 45%;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+@media (max-width: 1115px) {
+    .container {
+        width: 90%;
+    }
+    .graphics {
+        width: 40%;
+        right: 100px;
+    }
+    
+}
+@media (max-width: 1024px) {
+    .container {
+        height: 440px;
+    }
+    .info > * {
+        margin: 20px;
+    }
+    .graphics {
+        width: 40%;
+        height: 430px;
+        right: 35px;
+    }
+    .graphic {
+        width: 40%;
+        height: 180px;
+    }
+    i {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 920px) {
+    .container {
+        height: 420px;
+        background-position: 50%;
+    }
+    .info {
+        padding-top: 20px;
+    }
+
+    .graphics {
+        height: 400px;
+    }
+    .graphic {
+        width: 38%;
+        height: 170px;
+    }
+}
+@media (max-width: 820px) {
+    h2 {
+        font-size: 20px;
+    }
+    i {
+        font-size: 55px;
+    }
+    .graphics {
+        height: 400px;
+    }
+    .graphic {
+        width: 38%;
+        height: 150px;
+    }
+}
+@media (max-width: 770px) {
+    .info {
+        height: 330px;
+    }
+    .info > * {
+        margin: 10px;
+    }
+    .graphics {
+        height: 400px;
+    }
+    .graphic {
+        width: 42%;
+        height: 150px;
+    }
+    button {
+        padding: 5px 20px;
+        background-color: transparent;
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .info {
+        height: 400px;
+        margin-left: 20px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 17px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    p {
+        width: 65%;
+    }
+    .graphics {
+        width: 45%;
+    }
+    .graphic {
+        width: 40%;
+        justify-content: center;
+    }
+}
+
+@media (max-width:415px) {
+    .container {
+        width: 90%;
+        height: 730px;
+        background-image: none;
+        display: block;
+    }
+    .info {
+        width: 100%;
+        height: 360px;    
+        margin-left: 10px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    p {
+        width: 70%;
+        font-size: 13px;
+    }
+    .graphics {
+        width: 100%;
+        height: 300px;
+        margin-top: 0;
+        position: inherit;
+        justify-content: center;
+    }
+    .graphic {
+        width: 43%;
+    }
+}
+
+@media (max-width: 393px) {
+    .container {
+        height: 700px;
+    }
+    .info {
+        height: 380px;
+    } 
+    .graphic {
+        width: 43%;
+        height: 110px;
+    }
+    .info > * {
+        margin: 5px;
+    }
+    i {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:300px) {
+    .container {
+        height: 630px;
+    }
+    .info {
+        width: 90%;
+        height: 290px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 10px;
+        width: 90%;
+    }
+    button {
+        font-size: 11px;
+        padding: 4px 14px;
+    }
+    .graphic {
+        width: 41%;
+    }
+}

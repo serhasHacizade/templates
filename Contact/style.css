@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 5px;
+    width: 85%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.image {
+    width: 45%;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 90%;
+}
+
+.info {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    width: 45%;
+    min-width: 200px;
+    height: 500px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 5px;
+}
+
+p {
+    font-weight: 300;
+    width: 90%;
+    text-align: center;
+}
+
+.sur-name {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#name {
+    width: 45%;
+}
+
+#surname {
+    width: 45%;
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    width: 90px;
+    padding: 7px 10px;
+    margin-top: 10px;
+    background: rgb(189, 195, 30);
+    background: linear-gradient(90deg, rgba(189, 195, 30, 1) 0%, rgba(255, 132, 0, 1) 100%);
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 920px) {
+    .container {
+        height: 500px;
+    }
+    img {
+        width: 80%;
+    }
+    .info {
+        height: 470px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    .sur-name {
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    #name,
+    #surname {
+        width: 40%;
+        padding: 7px;
+    }
+    
+    input,
+    textarea {
+        width: 90%;
+        padding: 7px;
+    }
+    .form {
+        margin-top: 1rem;
+        height: 330px;
+        width: 100%;
+        align-items: center;
+    }
+
+
+}
+
+@media (max-width:740px) {
+    .image {
+        display: none;
+    }
+    .container {
+        box-shadow: none;
+    }
+    .info {
+        width: 90%;
+    }
+    .sur-name {
+        width: 90%;
+    }
+    #name,
+    #surname {
+        width: 45%;
+    }
+
+    input,
+    textarea {
+        width: 90%;
+    }
+
+
+}
+
+@media (max-width:415px) {
+    
+    .container {
+        width: 90%;
+    }
+    
+    .info {
+        width: 90%;
+    }
+    
+    .sur-name {
+        width: 90%;
+        justify-content: space-between;
+    }
+    #name,
+    #surname {
+        width: 45%;
+    }
+
+    input,
+    textarea {
+        width: 90%;
+    }
+}
+
+@media (max-width: 300px) {
+    .container {
+        height: 640px;
+    }
+    .info {
+        height: 510px;
+    }
+
+    button {
+        width: 40%;
+    }
+}

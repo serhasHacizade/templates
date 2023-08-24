@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-section {
+  width: 90%;
+}
+.tab-section .tab {
+  margin-top: 10px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.tab-section button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab-section button:hover {
+  background-color: #ddd;
+}
+.tab-section button.active {
+  background-color: #ccc;
+}
+.tab-section .tabcontent {
+  display: none;
+  flex-direction: row;
+  position: relative;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.tab-section .tabcontent p {
+  flex: 0.7;
+}
+.tab-section .tabcontent p iframe {
+  cursor: url("https://goo.gl/maps/GE9QcosyPk1PFBxh8");
+}
+.tab-section .tabcontent .info {
+  flex: 0.3;
+  position: relative;
+  width: 100%;
+  padding: 15px;
+}
+.tab-section .tabcontent .info .p {
+  width: 90%;
+  margin: 10px 0 65px;
+}
+.tab-section .tabcontent .info a {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  padding: 7px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+@media (max-width: 520px) {
+  .tab-section .tabcontent {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=subeler.css.map */

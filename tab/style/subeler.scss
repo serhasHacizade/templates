@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+html {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tab-section {
+    width: 90%;
+
+    .tab {
+        margin-top: 10px;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+    }
+
+    button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+
+        &:hover {
+            background-color: #ddd;
+        }
+
+        &.active {
+            background-color: #ccc;
+        }
+    }
+
+    .tabcontent {
+        display: none;
+        flex-direction: row;
+        position: relative;
+        border: 1px solid #ccc;
+        border-top: none;
+        
+        p {
+            flex: .7;
+            iframe {
+            cursor: url("https://goo.gl/maps/GE9QcosyPk1PFBxh8");
+
+            }
+        }
+        
+        .info {
+            flex:.3;
+            position: relative;
+            width: 100%;
+            padding: 15px;
+            .p {
+                width: 90%;
+                margin: 10px 0 65px;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                position: absolute;
+                bottom: 30px;
+                left: 20px;
+                padding: 7px 15px;
+                border: 1px solid black;
+                border-radius: 5px;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .tab-section {
+        .tabcontent {
+            flex-direction: column;
+        }
+    }
+}

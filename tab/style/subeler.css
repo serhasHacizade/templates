@@ -64,19 +64,34 @@ body {
   padding: 15px;
 }
 .tab-section .tabcontent .info .p {
+  line-height: 26px;
+  color: #494c51;
+  font-size: 15px;
+  margin-bottom: 20px;
   width: 90%;
-  margin: 10px 0 65px;
+  margin: 10px 0 30px;
+}
+.tab-section .tabcontent .info h3 {
+  font-size: 0.95rem;
 }
 .tab-section .tabcontent .info a {
   text-decoration: none;
   color: black;
   position: absolute;
   bottom: 30px;
-  left: 20px;
+  left: 15px;
   padding: 7px 15px;
   border: 1px solid black;
   border-radius: 5px;
   margin-top: 1rem;
+}
+.tab-section .tabcontent .info .icons {
+  width: 85%;
+  margin-bottom: 55px;
+}
+.tab-section .tabcontent .info .icons i {
+  padding: 12px 12px 12px 0px;
+  font-size: 28px;
 }
 
 @media (max-width: 520px) {

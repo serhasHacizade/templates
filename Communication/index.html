@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' href='components/favicon.png' type="image/png" />
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./build/css/demo.css">
+    <link rel="stylesheet" href="./build/css/intlTelInput.css">
+    <title>Communication</title>
+</head>
+
+<body>
+    <section class="contact-section">
+        <div class="container">
+            <div class="info">
+                <h1>Contact us</h1>
+                <p>
+                    Use the form below to contact us. We will reply to your message as soon as possible. You can also
+                    reach us by sending an e-mail to <a href="">info@preysoft.com</a>.</p>
+            </div>
+            <form action="submit">
+                <div class="part">
+                    <input placeholder="Name*" type="text" name="name" id="name" required>
+                    <input placeholder="Email*" type="text" name="email" id="email" required>
+                </div>
+                <div class="part">
+                    <input placeholder="Company*" type="text" name="company" id="company" required>
+                    <input placeholder="Telephone*" id="phone" type="tel" name="phone" />
+                </div>
+                <textarea name="textarea" id="textarea" placeholder="Type somethings*" cols="10" rows="8"></textarea>
+                <button type="submit" href="/">Submit</button>
+            </form>
+        </div>
+    </section>
+    <script src="./build/js/intlTelInput.js"></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {});
+    </script>
+</body>
+
+</html>

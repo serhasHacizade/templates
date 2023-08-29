@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='shortcut icon' href='components/favicon.png' type="image/png" />
+  <link rel="stylesheet" href="./style/style.css">
+  <title>About2</title>
+</head>
+
+<body>
+  <section class="about-section">
+    <div class="container">
+      <div class="info">
+        <h1>A Few Words About Our Store</h1>
+        <div class="tab-section">
+          <div class="tab">
+            <button class="tablinks active" onclick="openModal(event, 'about')">About</button>
+            <button class="tablinks" onclick="openModal(event, 'vision')">Vision</button>
+            <button class="tablinks" onclick="openModal(event, 'mission')">Mission</button>
+          </div>
+          <div class="tabcontent" id="about" style="display: flex;">
+            <p>About: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio architecto quam ducimus animi cumque odit consectetur explicabo nisi maiores sit .</p>
+          </div>
+          <div class="tabcontent" id="vision">
+            <p>Vision: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio architecto quam ducimus animi cumque odit consectetur explicabo nisi maiores sit .</p>
+          </div>
+          <div class="tabcontent" id="mission">
+            <p>Mission: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio architecto quam ducimus animi cumque odit consectetur explicabo nisi maiores sit .</p>
+          </div>
+        </div>
+        <a href="">Read More</a>
+      </div>
+      <div class="image">
+        <img src="components/picture.jpg" alt="">
+      </div>
+    </div>
+  </section>
+  <script src="app.js"></script>
+</body>
+
+</html>

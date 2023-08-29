@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section {
+  min-width: 280px;
+}
+.about-section .container {
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.about-section .container .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 55%;
+}
+.about-section .container .info h1 {
+  font-size: 1em;
+  margin: 15px 0;
+}
+.about-section .container .info .tab-section .tab {
+  overflow: hidden;
+  width: 90%;
+  border: 1px solid #ccc;
+  background-color: #619d03;
+}
+.about-section .container .info .tab-section .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 0.7em;
+}
+.about-section .container .info .tab-section .tab button:hover {
+  background-color: #72b606;
+}
+.about-section .container .info .tab-section .tab button.active {
+  background-color: #72b606;
+}
+.about-section .container .info .tab-section .tabcontent {
+  display: none;
+  flex-direction: row;
+  position: relative;
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 90%;
+  margin-bottom: 80px;
+}
+.about-section .container .info .tab-section .tabcontent p {
+  padding: 10px 7px;
+  width: 90%;
+  font-size: 0.8em;
+}
+.about-section .container .info a {
+  text-decoration: none;
+  color: black;
+  bottom: 25px;
+  position: absolute;
+  text-align: center;
+  padding: 7px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+.about-section .container .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+}
+.about-section .container .image img {
+  width: 90%;
+}
+
+@media (max-width: 740px) {
+  .about-section .container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .about-section .container .info {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .about-section .container .info .tab-section {
+    width: 100%;
+  }
+  .about-section .container .info .tab-section .tab {
+    width: 100%;
+  }
+  .about-section .container .info .tab-section .tabcontent {
+    width: 100%;
+  }
+  .about-section .container .image {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

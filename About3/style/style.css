@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.about-section .container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+}
+.about-section .container .tabs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+  height: 70%;
+}
+.about-section .container .tabs .tabs-radio {
+  display: none;
+}
+.about-section .container .tabs .tabs-radio:checked + .tabs-label {
+  color: #619d03;
+  border-bottom: 2px solid #619d03;
+}
+.about-section .container .tabs .tabs-radio:checked + .tabs-label + .tabs-content {
+  display: initial;
+}
+.about-section .container .tabs .tabs-label {
+  padding: 10px 16px;
+  height: 40px;
+  cursor: pointer;
+}
+.about-section .container .tabs .tabs-content {
+  order: 1;
+  width: 100%;
+  line-height: 1.5;
+  font-size: 0.9em;
+  display: none;
+}
+.about-section .container .tabs .tabs-content p {
+  width: 95%;
+  padding: 10px 0;
+  border-bottom: 3px solid #dddddd;
+}
+.about-section .container .images {
+  position: relative;
+  width: 45%;
+  overflow: hidden;
+}
+.about-section .container .images .image {
+  display: flex;
+  width: 100%;
+}
+.about-section .container .images .image img {
+  border: 2px solid #619d03;
+  height: 400px;
+  width: 100%;
+  transition: all 0.15s ease;
+}
+.about-section .container .images .image input {
+  display: none;
+}
+.about-section .container .images .image #img1:checked ~ .p1 {
+  margin-left: 0;
+}
+.about-section .container .images .image #img2:checked ~ .p2 {
+  margin-left: -100%;
+}
+.about-section .container .images .image #img3:checked ~ .p3 {
+  margin-left: -200%;
+}
+.about-section .container .images .image #img4:checked ~ .p4 {
+  margin-left: -300%;
+}
+.about-section .container .images .dots {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.about-section .container .images .dots label {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: solid #619d03 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin: 3px;
+}
+.about-section .container .images .dots label:hover {
+  background: #619d03;
+}
+
+@media (max-width: 920px) {
+  .about-section .container {
+    width: 100%;
+  }
+}
+@media (max-width: 740px) {
+  .about-section .container {
+    flex-direction: column;
+  }
+  .about-section .container .tabs {
+    width: 90%;
+    height: 30%;
+    margin-bottom: 6rem;
+  }
+  .about-section .container .images {
+    width: 90%;
+    height: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

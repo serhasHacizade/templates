@@ -59,6 +59,16 @@
             </div>
         </div>
     </section>
+    <script>
+        var counter = 1;
+        setInterval(() => {
+            document.getElementById("img" + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 2000);
+    </script>
 </body>
 
 </html>
